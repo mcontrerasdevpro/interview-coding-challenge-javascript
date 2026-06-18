@@ -8,8 +8,8 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
-				"editor.defaultFormatter": "esbenp.prettier-vscode"
-			},
+    "editor.defaultFormatter": "vscode.json-language-features"
+},
 			"extensions": ["learn-pack.learnpack-vscode"]
 		}
 	},
@@ -17,7 +17,8 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
-	"onCreateCommand": "npm i jest@29.7.0 jest-environment-jsdom@29.7.0 -g && npm i @learnpack/learnpack@5.0.29 -g && learnpack plugins:install @learnpack/node@1.1.15"
+"onCreateCommand": "mkdir -p /workspaces/.npm-global && npm config set prefix '/workspaces/.npm-global' && export PATH=/workspaces/.npm-global/bin:$PATH && npm i jest@29.7.0 jest-environment-jsdom@29.7.0 -g && npm i @learnpack/learnpack@5.0.29 -g && learnpack plugins:install @learnpack/node@1.1.15",
+	
 
 
 	// Use 'postCreateCommand' to run commands after the container is created.
@@ -27,5 +28,5 @@
 	// "customizations": {},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"remoteUser": "root"
 }

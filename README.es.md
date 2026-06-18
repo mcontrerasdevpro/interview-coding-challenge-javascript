@@ -49,3 +49,8 @@ La mayoria de carpetas de ejercicios incluye:
 
 - Mantener `README.md` y `README.es.md` sincronizados cuando se cambie contenido.
 - Los archivos `app.js` estan intencionalmente sin resolver para estudiantes.
+
+
+
+export PATH=/workspaces/.npm-global/bin:$PATH
+learnpack start

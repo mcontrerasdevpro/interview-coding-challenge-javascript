@@ -5,6 +5,7 @@ function friend(friends) {
   // TODO: write your solution here
   // `friends` will be an array of strings, e.g. ["Ryan", "Kieran", "Mark", "Miguel"]
   // Return a new array containing only the names that have exactly 4 characters.
+  return friends.filter(nombre => nombre.length === 4)
 }
 
 // IGNORE BELOW THIS LINE

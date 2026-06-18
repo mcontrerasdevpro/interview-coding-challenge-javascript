@@ -1,7 +1,7 @@
 function FirstReverse(str) {
   // TODO: implement string reversal
-  return str;
-}
+ 
+return str.split("").reverse().join("");}
 
 // IGNORE BELOW THIS LINE
 // read input
